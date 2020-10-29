@@ -24,6 +24,11 @@ public class Race<winner> {
                 winner = "Rabbit wins the race";
             }
 
+            JOptionPane.showMessageDialog(null, winner);
+
+
         }
     }
+}
+
 

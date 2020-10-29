@@ -14,7 +14,8 @@ public class Race<winner> {
         Tortoise tortoise = new Tortoise();
         tortoise.getTortoise().start();
         String winner = null;
+        sleep(20000L);
 
         }
     }
-}
+

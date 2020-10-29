@@ -9,11 +9,21 @@ public class Tortoise extends Thread {
     private float timeTakenByTortoiseToCompleteTheRace = 0f;
 
     public float getTimeTakenByTortoise() {
-        return timeTakenByTortoise;
+        return timeTakenByTortoiseToCompleteTheRace;
     }
 
-    public void setTimeTakenByTortoise(float timeTakenByTortoise) {
-        this.timeTakenByTortoise = timeTakenByTortoise;
+    public void setTimeTakenByTortoise(float timeTakenByTortoiseToCompleteTheRace) {
+        this.timeTakenByTortoiseToCompleteTheRace = timeTakenByTortoiseToCompleteTheRace;
+    }
+
+    public Tortoise() {
+        this.tortoise = new Thread(this, "tortoise");
+    }
+
+
+
+    public Thread getTortoise() {
+        return tortoise;
     }
 
 

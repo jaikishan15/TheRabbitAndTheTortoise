@@ -8,6 +8,10 @@ public class Tortoise extends Thread {
     private final Thread tortoise;
     private float timeTakenByTortoiseToCompleteTheRace = 0f;
 
+    public Tortoise() {
+        this.tortoise = new Thread(this, "tortoise");
+    }
+
     public float getTimeTakenByTortoise() {
         return timeTakenByTortoiseToCompleteTheRace;
     }
@@ -15,11 +19,6 @@ public class Tortoise extends Thread {
     public void setTimeTakenByTortoise(float timeTakenByTortoiseToCompleteTheRace) {
         this.timeTakenByTortoiseToCompleteTheRace = timeTakenByTortoiseToCompleteTheRace;
     }
-
-    public Tortoise() {
-        this.tortoise = new Thread(this, "tortoise");
-    }
-
 
     public Thread getTortoise() {
         return tortoise;
@@ -62,8 +61,8 @@ public class Tortoise extends Thread {
                 "Tortoise",
                 JOptionPane.OK_CANCEL_OPTION
         );
-            }
-        }
+    }
+}
 
 
 
